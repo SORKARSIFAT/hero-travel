@@ -136,13 +136,54 @@ input, select{
     justify-content: space-between;
 }
 
-.text-content p ,li{
+.text-content p ,
+.text-content li{
  font-size: 16px;
  font-weight: 400;
 line-height: 24px;
 letter-spacing: 0%;
 word-spacing: 5px;
 }
-.text-content p ,li , h3 {
-    text-align: left;
+.text-content p ,
+.text-content li , 
+.text-content h3 {
+text-align: left;
+}
+
+/* your destination */ 
+.your-destination img{
+    width: 100%;
+    height: 300px;
+    filter: brightness(70%);
+}
+
+.row-1,
+.row-2,
+.row-3
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+.row-1{
+    margin-top: 40px;
+}
+.row-2{
+    grid-template-columns: 0.8fr 1.5fr 0.7fr;
+}
+.row-3{
+    grid-template-columns: 0.75fr  1.25fr;
+}
+.country-card{
+    position: relative;
+}
+.country{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-weight: 800;
+    font-size: 28px;
+    transform: translate(-50%,-50%);
 }
